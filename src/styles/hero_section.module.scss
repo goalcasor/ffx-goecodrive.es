@@ -1,0 +1,43 @@
+@import "./theme/Default.module.scss";
+@import "./theme/Utils.module.scss";
+
+.hero_section{
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/01.webp');
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero_section_container{
+    height: 100%;
+    width:  100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_section_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 50%;
+    @extend %text-container-blur;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 1.5rem;
+    @include isMobile{
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+.title{
+    text-align: center;
+    @extend %title-xl;
+    @include isMobile{
+        font-size: var(--title-size);
+    }
+}

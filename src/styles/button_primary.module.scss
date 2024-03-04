@@ -1,0 +1,42 @@
+@import "./theme/Default.module.scss";
+@import "./theme/Utils.module.scss";
+
+.button__secondary {
+    background-color: transparent;
+    border-radius: .3rem;
+    cursor: pointer;
+    padding: .2rem;
+    font-size: var(--small-card-h3);
+    font-weight: 700;
+    color: #000;
+    width: 50%;
+    transition: all .2s;
+    border: none;
+    span {
+        font-weight: bold;
+    }
+}
+
+.button__secondary:hover{
+    @extend %text-gradient-primary; 
+}
+
+.button__primary{
+    border: none;
+    border-radius: .3rem;
+    color: var( --color-primary);
+    cursor: pointer;
+    background: var( --gradient-primary);
+    padding: var(--padding);
+    font-size: var( --title-size-sm);
+    transition: all .3s;
+    width: 100%;
+}
+
+.button__primary:hover{
+    background: var(--gradient-primary-hover);
+}
+
+.button__text{
+    font-size: var(--title-size-md);
+}

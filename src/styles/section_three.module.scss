@@ -1,0 +1,19 @@
+@import "./theme/Default.module.scss";
+@import "./theme/Utils.module.scss";
+
+.section_three{
+    height: 100vh;
+    width: 100vw;
+    background-color: var( --color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.sub_title{
+    font-size: var( --title-size);
+    color: var(--color-primary);
+}

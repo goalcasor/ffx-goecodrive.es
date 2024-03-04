@@ -1,0 +1,116 @@
+@import "./theme/Default.module.scss";
+@import "./theme/Utils.module.scss";
+
+.section_two{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-surface);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    @include isMobile{
+        height: 280vh;
+    }
+}
+
+.sub_title{
+    font-size: var( --title-size);
+    color: var(--color-primary);
+}
+
+.section_two_container{
+    display: flex;
+    gap: 2rem;
+    width: 80vw;
+    height: 100%;
+
+    @include isMobile{
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+.section_two_image{
+    flex: 4;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/ffx-product.png');
+    @include isMobile{
+        min-height: 40vh;
+    }
+}
+
+.section_two_grid_container{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+}
+
+.section_two_grid_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 80%;
+
+    @include isMobile{
+        height: 200vh;
+    }
+}
+
+.section_two_grid_item_01{
+    flex: 6;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    @include isMobile{
+        flex-direction: column;
+        flex: 5;
+    }
+    & .section_two_grid_sub_item_01{
+        flex: 6;
+       
+    }
+    & .section_two_grid_sub_item_02{
+        flex: 6;
+      
+    }
+}
+.section_two_grid_item_02{
+    flex: 6;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    @include isMobile{
+        flex-direction: column;
+        flex: 7;
+    }
+
+    & .section_two_grid_sub_item_01{
+        flex: 4;
+         @include isMobile{
+            flex: 1;
+         }
+
+    }
+    & .section_two_grid_sub_item_02{
+        flex: 4;
+         @include isMobile{
+            flex: 1;
+         }
+    }
+    & .section_two_grid_sub_item_03{
+        flex: 4;
+         @include isMobile{
+            flex: 1;
+         }
+    }
+}
+
