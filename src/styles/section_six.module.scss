@@ -23,7 +23,9 @@
     text-align: center;
     @include isMobile{
         width: 100vw;
-        padding: 1rem
+        padding: 1rem;
+        text-align: left;
+
     }
 }
 
@@ -38,6 +40,9 @@
 .description{
     font-size: var(--title-size-md);
     color: var(--color-surface);
+    @include isMobile{
+        font-size: var(--title-size-sm);
+    }
 }
 
 .buttons_container{

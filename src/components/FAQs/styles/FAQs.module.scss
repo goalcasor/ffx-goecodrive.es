@@ -17,6 +17,11 @@
     font-size: var(--title-size);
     padding-bottom: 1rem;
     color: var(--color-primary);
+
+    @include isMobile {
+      font-size: var(--title-size-md);
+    }
+    
   }
   
   &_wrapper {

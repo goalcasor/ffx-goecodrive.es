@@ -19,6 +19,10 @@
 .sub_title{
     font-size: var( --title-size);
     color: var(--color-primary);
+
+    @include isMobile{
+        font-size: var(--title-size-md);
+    }
 }
 
 .section_two_container{

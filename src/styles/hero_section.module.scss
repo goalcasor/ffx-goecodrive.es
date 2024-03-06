@@ -36,13 +36,15 @@
     @include isMobile{
         width: 100%;
         height: fit-content;
+        text-align: left;
+
     }
 }
 
 .title{
     @extend %title-xl;
     @include isMobile{
-        font-size: var(--title-size);
+        font-size: var(--title-size-md);
     }
 }
 
@@ -50,6 +52,6 @@
     color: var(--color-surface);
     @extend %title-lg;
     @include isMobile{
-        font-size: var(--title-size-md);
+        font-size: var(--title-size-xsm);
     }
 }

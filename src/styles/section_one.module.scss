@@ -22,6 +22,7 @@
     @include isMobile{
         flex-direction: column;
         width: 100vw;
+        
     }
 }
 
@@ -40,6 +41,9 @@
 .sub_title{
     font-size: var( --title-size);
     color: var(--color-primary);
+    @include isMobile{
+        font-size: var(--title-size-md);
+    }
 }
 
 .description{

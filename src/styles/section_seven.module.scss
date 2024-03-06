@@ -23,14 +23,17 @@
     border-radius: .3rem;
     padding: 3rem;
     width: 80vw;
+    text-align: center;
+
     @include isMobile{
         width: 100vw;
-        padding: 1rem
+        padding: 1rem;
+        text-align: left;
+
     }
 }
 
 .sub_title{
-    text-align: center;
     margin-bottom: 1rem;
     @extend %text-gradient-primary;
     @extend %title-xl;
@@ -41,8 +44,7 @@
 
 .description{
     font-size: var(--title-size-sm);
-    color: var(--color-surface);
-    text-align: left;
+    color: var(--color-surface-text);
 
     @include isMobile{
         font-size: var(--title-size-xs);
