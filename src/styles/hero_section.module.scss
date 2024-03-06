@@ -13,8 +13,12 @@
     height: 100%;
     width:  100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    @include isMobile{
+        justify-content: center;
+        align-items: flex-end;
+    }
 }
 
 .hero_section_content{
@@ -22,12 +26,13 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 80vw;
-    height: 50%;
+    width: 50vw;
+    height: 70%;
     @extend %text-container-blur;
     padding: 1rem;
     border-radius: 10px;
     gap: 1.5rem;
+    text-align: center;
     @include isMobile{
         width: 100%;
         height: fit-content;
@@ -35,9 +40,16 @@
 }
 
 .title{
-    text-align: center;
     @extend %title-xl;
     @include isMobile{
         font-size: var(--title-size);
+    }
+}
+
+.description{
+    color: var(--color-surface);
+    @extend %title-lg;
+    @include isMobile{
+        font-size: var(--title-size-md);
     }
 }

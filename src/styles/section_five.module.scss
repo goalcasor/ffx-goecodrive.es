@@ -1,0 +1,135 @@
+@import "./theme/Default.module.scss";
+@import "./theme/Utils.module.scss";
+
+
+.section_five{
+    width: 100vw;
+    background-color: var( --color-primary);
+    background-image: url('/images/team1.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+    @include isMobile{
+        height: fit-content;
+        background-position: 0;
+        background-image: none;
+    }
+}
+
+.sub_title{
+    @extend %text-gradient-primary;
+    @extend %title-xl;
+
+    @include isMobile{
+        font-size: var(--title-size-md);
+    }
+}
+
+.description{
+    color: var(--color-surface);
+    @include isMobile{
+        font-size: var(--title-size-xs);
+    }
+}
+.section_five_container{
+    width: 80vw;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+
+    @include isMobile{
+        flex-direction: column;
+        height: fit-content;
+        width: 100vw;
+        padding: 1rem;
+    }
+}
+
+.section_five_text{
+    flex: 1;
+
+    & hr{
+        width: 100%;
+        margin: 2rem  0;
+    }
+    
+}
+
+.section_five_list{
+    list-style: none;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    @include isMobile{
+        padding-left: .2rem;
+    }
+    & li{
+        display: flex;
+        gap: .2rem;
+        align-items: self-start;
+        @include isMobile{
+            gap: .1rem;
+        }
+        & svg{
+            color: var(--color-primary);
+            font-size: var(--title-size-md);
+            background:var(--gradient-primary);
+            border-radius: 100%;
+
+            @include isMobile{
+                font-size: var(--title-size-smd);
+            }
+        }
+    }
+    
+    & h3{
+        font-size: var(--title-size-smd);
+        color: var(--color-surface);
+        margin-bottom: 1rem;
+
+        @include isMobile{
+            font-size: var(--title-size-xs);
+        }
+    }
+}
+
+.section_five_avatars_container{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.avatars_title{
+    font-size: var(--title-size-md);
+    color: var(--color-surface);
+    margin: 2rem 0;
+}
+.avatars_text{
+    margin: 2rem 0;
+    @extend %text-gradient-primary;
+}
+
+.button_text{
+    @include isMobile{
+        font-size: var(--title-size-smd);
+    }
+}
+
+.section_five_image{
+    flex: 1;
+    background-image: url('/images/docs.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include isMobile{
+        flex: auto;
+        height: 50vh;
+        width: auto;
+    }
+}
+
+
+

@@ -40,9 +40,6 @@ const Header = () => {
               <Link href={'#docs'}>Documentación</Link>
             </li>
             <li>
-              <Link href={'#reviews'}>Reseñas</Link>
-            </li>
-            <li>
               <Link href={'#faq'}>FAQ</Link>
             </li>
           </ul>

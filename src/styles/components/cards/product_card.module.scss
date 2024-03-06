@@ -1,0 +1,59 @@
+@import "../../theme/Default.module.scss";
+@import "../../theme/Utils.module.scss";
+
+.product_card {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: .3rem;
+
+    @include isMobile{
+      height: fit-content;
+    }
+
+    .product_image {
+      margin-bottom: 15px;
+      height: 200px ;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      @include isMobile{
+        height: 150px;
+      }
+    }
+  
+    .product_title {
+      font-size: var(--title-size-smd);
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: var(--color-primary);
+
+      @include isMobile{
+        font-size: var(--title-size-sm);
+      }
+    }
+  
+    .product_description {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  
+    .product_price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--color-surface-text);
+    }
+  }
+
+  .button_text{
+    @include isMobile{
+      font-size: var(--title-size-sm);
+    }
+  }
+  

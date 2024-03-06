@@ -7,7 +7,7 @@ export default function SectionTwo() {
   return (
     <section className={styles.section_two}>
         <div className={styles.section_two_subtile}>
-            <h2 className={styles.sub_title}>Solución todo en uno</h2>    
+            <h2 className={styles.sub_title}>FFX es una solución todo en uno, ahorras, proteges tu motor y mucho más...</h2>    
         </div>    
         
         <div className={styles.section_two_container}>

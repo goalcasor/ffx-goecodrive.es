@@ -1,0 +1,17 @@
+@import "./theme/Default.module.scss";
+@import "./theme/Utils.module.scss";
+
+.section_four{
+    width: 100vw;
+    background-color: var(--color-surface-rgb);
+    display: grid;
+    place-items: center;
+}
+
+.section_four_container{
+    width: 80vw;
+
+    @include isMobile{
+        width: 100vw;
+    }
+}

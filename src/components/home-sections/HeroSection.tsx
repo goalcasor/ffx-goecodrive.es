@@ -11,8 +11,11 @@ const HeroSection = () => {
            <div className={styles.hero_section_container}>
                 <div className={styles.hero_section_content}>
                     <h1 className={styles.title}>
-                        Excelente para tu motor, para tu bolsillo y por supuesto, para el planeta
+                        FFX | Tratamiento integral para tu combustible.
                     </h1>
+                    <p className={styles.description}>
+                        Excelente para tu motor, para tu bolsillo y por supuesto, para el planeta
+                    </p>
                     <Button
                         onClick={() => alert('Hello button')}
                         primary
