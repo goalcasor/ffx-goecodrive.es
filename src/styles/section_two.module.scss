@@ -12,7 +12,7 @@
     gap: 2rem;
     padding: 1rem;
     @include isMobile{
-        height: 300vh;
+        height: auto;
     }
 }
 

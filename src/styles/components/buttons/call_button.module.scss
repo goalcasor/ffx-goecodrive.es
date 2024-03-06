@@ -1,0 +1,24 @@
+@import "../../theme/Default.module.scss";
+@import "../../theme/Utils.module.scss";
+
+.button {
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    font-weight: normal;
+    border-radius: var(--card-radius);
+    width: fit-content;
+    height: 5rem; 
+    font-size: 1.6rem; 
+    padding: 1rem 2rem; 
+    border: none;
+    
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      text-decoration: none; 
+    }
+  }

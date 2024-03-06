@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/button_primary.module.scss';
+import styles from '@/styles/components/buttons/button_primary.module.scss';
 
 interface ButtonProps {
     onClick: () => void;

@@ -12,6 +12,10 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen); 
   };
 
+  const handleLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <div className={styles.header}>
       <div className={styles.header_container}>
@@ -23,24 +27,37 @@ const Header = () => {
             height={46}
           />
         </div>
-      
+
         <div className={styles.burger_icon} onClick={toggleMobileMenu}>
           <HiMenu />
         </div>
-       
+
         <div className={`${styles.links_container} ${isMobileMenuOpen ? styles.mobile_menu_open : ''}`}>
           <ul className={styles.links_list}>
             <li>
-              <Link href={'#home'}>Inicio</Link>
+              <Link href={'#home'} onClick={handleLinkClick}>
+                Inicio
+              </Link>
             </li>
             <li>
-              <Link href={'#products'}>Productos</Link>
+              <Link href={'#products'} onClick={handleLinkClick}>
+                Productos
+              </Link>
             </li>
             <li>
-              <Link href={'#docs'}>Documentación</Link>
+              <Link href={'#docs'} onClick={handleLinkClick}>
+                Documentación
+              </Link>
             </li>
             <li>
-              <Link href={'#faq'}>FAQ</Link>
+              <Link href={'#faq'} onClick={handleLinkClick}>
+                FAQ
+              </Link>
+            </li>
+            <li>
+              <Link href={'#contact'} onClick={handleLinkClick}>
+                Contacto
+              </Link>
             </li>
           </ul>
         </div>
@@ -50,3 +67,4 @@ const Header = () => {
 };
 
 export default Header;
+

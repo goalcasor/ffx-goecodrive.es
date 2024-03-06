@@ -69,19 +69,20 @@
     }
     & li{
         display: flex;
+        align-items: baseline;
         gap: .2rem;
-        align-items: self-start;
         @include isMobile{
+            height: 3rem;
             gap: .1rem;
         }
         & svg{
             color: var(--color-primary);
-            font-size: var(--title-size-md);
+            font-size: var(--title-size-smd);
             background:var(--gradient-primary);
             border-radius: 100%;
 
             @include isMobile{
-                font-size: var(--title-size-smd);
+                font-size: var(--title-size-xs);
             }
         }
     }

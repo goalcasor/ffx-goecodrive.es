@@ -6,6 +6,11 @@
     place-items: center;
     height: 100vh;
     width: 100vw;
+
+    
+    @include isMobile{
+        height: auto;
+    }
 }
 
 .section_one_container{
@@ -16,7 +21,6 @@
 
     @include isMobile{
         flex-direction: column;
-        
         width: 100vw;
     }
 }

@@ -1,0 +1,46 @@
+@import "./theme/Default.module.scss";
+@import "./theme/Utils.module.scss";
+
+.section_seven{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--color-black-surface);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+    @include isMobile{
+        height: fit-content;
+        background-position: 0;
+        background-image: none;
+    }
+}
+
+.section_seven_container{
+    border: 1px solid var(--color-surface-text);
+    border-radius: .3rem;
+    padding: 3rem;
+    width: 80vw;
+    @include isMobile{
+        width: 100vw;
+        padding: 1rem
+    }
+}
+
+.sub_title{
+    text-align: center;
+    margin-bottom: 1rem;
+    @extend %text-gradient-primary;
+    @extend %title-xl;
+    @include isMobile{
+        font-size: var(--title-size-md);
+    }
+}
+
+.description{
+    font-size: var(--title-size-sm);
+    color: var(--color-surface);
+    text-align: left;
+}
