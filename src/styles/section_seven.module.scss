@@ -43,4 +43,8 @@
     font-size: var(--title-size-sm);
     color: var(--color-surface);
     text-align: left;
+
+    @include isMobile{
+        font-size: var(--title-size-xs);
+    }
 }

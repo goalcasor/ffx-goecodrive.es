@@ -11,7 +11,7 @@ export default function SectionOne() {
             </div>
             <div className={styles.section_one_video}>
                 <video className={styles.video} controls controlsList="nodownload" poster="/images/05.webp">
-                <source src="/videos/ffx-español.mp4" type="video/mp4" />
+                <source src="/videos/ffx-spanish.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
                 </video>
             </div>
