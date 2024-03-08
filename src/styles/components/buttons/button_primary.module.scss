@@ -17,6 +17,8 @@
     }
 }
 
+
+
 .button__secondary:hover{
     @extend %text-gradient-primary; 
 }
@@ -24,13 +26,21 @@
 .button__primary{
     border: none;
     border-radius: .3rem;
-    color: var( --color-primary);
     cursor: pointer;
     background: var( --gradient-primary);
-    padding: var(--padding);
     font-size: var( --title-size-sm);
     transition: all .3s;
     width: 100%;
+    padding: 1rem;
+    & button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: var( --color-primary);
+
+       
+    }
+
 }
 
 .button__primary:hover{

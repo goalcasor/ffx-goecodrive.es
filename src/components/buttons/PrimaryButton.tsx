@@ -2,18 +2,25 @@ import React from 'react';
 import styles from '@/styles/components/buttons/button_primary.module.scss';
 
 interface ButtonProps {
-    onClick: () => void;
     children: React.ReactNode;
     primary?: boolean;
+    href: string
 }
 
-const Button: React.FC<ButtonProps> = ({ onClick, children, primary = true }) => {
+const Button: React.FC<ButtonProps> = ({ children, primary = true, href }) => {
     const buttonClassName = primary ? styles.button__primary : styles.button__secondary;
 
     return (
-        <button className={buttonClassName} onClick={onClick}>
+        <a
+            href={href}
+            className={buttonClassName} 
+        >
+        <button 
+            
+        >
             <span className={styles.button__text}>{children}</span>
         </button>
+        </a>
     );
 };
 

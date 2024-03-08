@@ -58,7 +58,7 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
   }, [videoElement, setVideoEnded]);
 
   return (
-    <section className={styles.section_one}>
+    <section className={styles.section_one} id='video_section'>
       <div className={styles.section_one_container}>
         <div className={styles.section_one_text}>
           <h2 className={styles.sub_title}>{callToAction}</h2>

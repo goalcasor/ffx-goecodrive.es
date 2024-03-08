@@ -49,7 +49,9 @@ export default function SectionFive() {
                         En 1973, Ernst Otto Fischer y Geoffrey Wilkinson ganaron el Premio Nobel por su trabajo pionero en la química organometálica, la misma química que está detrás de Factor de Combustible X. Ambos químicos revolucionaron nuestra comprensión de los compuestos metálicos y su impacto en áreas como la catálisis y la síntesis de materiales.
                     </p>
 
-                    <Button onClick={() => alert('Alert Docs')}>
+                    <Button 
+                    
+                    href='https://d2511r1bjh2ay3.cloudfront.net/product/2hdpsFILcAjxmjkq5vdb0NY4z51GPS8y1y7LCZxe.pdf'>
                         <h3 className={styles.button_text}>Descargar documentación</h3>
                     </Button> 
                 </div>

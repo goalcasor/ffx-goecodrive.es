@@ -17,10 +17,10 @@ const HeroSection = () => {
                         Excelente para tu motor, para tu bolsillo y por supuesto, para el planeta
                     </p>
                     <Button
-                        onClick={() => alert('Hello button')}
                         primary
+                        href='#video_section'
                     >
-                        <h3>Comprar ahora</h3>
+                        <h3>Más información</h3>
                     </Button>
 
                    
