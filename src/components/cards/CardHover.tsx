@@ -32,12 +32,12 @@ const CardHoverSecondary: React.FC<CardHoverSecondaryProps> = ({ title,/* includ
                     <div className={styles.card_hover_secondary_footer}>
                         <div className={styles.card_hover_secondary_footer_btn_container}>
 
-                            <PrimaryButton
+                           {/*  <PrimaryButton
                                 onClick={() => alert('Hello world!')}
                                 primary
                             >
                                 <h3>Comprar</h3>
-                            </PrimaryButton>
+                            </PrimaryButton> */}
                         </div>
                        
                     </div>

@@ -19,14 +19,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       >
       </div>
       <h2 className={styles.product_title}>{product.title}</h2>
-      <p className={styles.product_price}>Price: ${product.price}</p>
-      <Button
-        onClick={() => alert('Hello Buy ')}
-        primary
+      <p className={styles.product_price}>Price: € {product.price}</p>
+      <a
+      /*   onClick={() => alert('Hello Buy ')}
+        primary */
+        href={product.url}
       >
 
         <h3 className={styles.button_text}>Comprar ahora</h3>
-      </Button>
+      </a>
     </article>
   );
 };

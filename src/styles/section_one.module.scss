@@ -57,10 +57,22 @@
 .section_one_video{
     flex: 1;
     border-radius: .3rem;
+
+    & video::-webkit-media-controls-timeline {
+        display: none;
+      }
+      
+    & video::-webkit-media-controls-panel {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    }
+
     & .video{
         height: 350px;
         width: auto;
         border-radius: inherit;
+
+        
 
         @include isMobile{
             width: 100%;
@@ -68,3 +80,19 @@
         }
     }
 }
+
+@keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .arrow {
+    animation: moveUp 2s infinite;
+  }

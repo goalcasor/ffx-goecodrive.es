@@ -3,8 +3,7 @@
 
 .section_six{
     width: 100vw;
-    min-height: 100vh;
-    background-color: var( --color-primary);
+    background-color: var( --color-surface);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -30,7 +29,7 @@
 }
 
 .sub_title{
-    @extend %text-gradient-primary;
+   color: var(--color-primary);
     @extend %title-xl;
     @include isMobile{
         font-size: var(--title-size-md);

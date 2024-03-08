@@ -11,6 +11,10 @@
     font-size: 1.6rem; 
     padding: 1rem 2rem; 
     border: none;
+
+    @include isMobile{
+      font-size: var(--title-size-sm);
+    }
     
     a {
       display: flex;
