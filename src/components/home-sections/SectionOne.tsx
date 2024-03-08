@@ -85,8 +85,8 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
               justifyContent: 'center',
               flexDirection: 'column'
             }}>
-              <p style={{padding: '1rem'}}>¡En un momento tendrás el acceso exclusivo a FFX!...   </p>
-              <Loader />
+              <p style={{padding: '1rem'}}>¡En un momento tendrás el acceso exclusivo a FFX!...  <Loader /> </p>
+              
             </div>
           )}
         </div>
