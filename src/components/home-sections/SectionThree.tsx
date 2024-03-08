@@ -41,10 +41,10 @@ export default function SectionThree() {
                     spaceBetween={30}
                     modules={[Autoplay, Pagination, Navigation]}
                     onAutoplayTimeLeft={onAutoplayTimeLeft}
-                   /*  autoplay={{
-                        delay: 2000,
+                    autoplay={{
+                        delay: 4000,
                         disableOnInteraction: false,
-                    }} */
+                    }}
                     className="mySwiper"
                 >
                     {ProductData.map(product => (

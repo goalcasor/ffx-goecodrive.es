@@ -15,11 +15,10 @@ const Button: React.FC<ButtonProps> = ({ children, primary = true, href }) => {
             href={href}
             className={buttonClassName} 
         >
-        <button 
-            
-        >
-            <span className={styles.button__text}>{children}</span>
-        </button>
+            <button 
+            >
+                <span className={styles.button__text}>{children}</span>
+            </button>
         </a>
     );
 };

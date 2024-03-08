@@ -14,6 +14,7 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
   const [videoStarted, setVideoStarted] = useState<boolean>(false);
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [callToAction, setCallToAction] = useState<string>('');
+
   useEffect(() => {
     let videoEl = document.getElementById('video') as HTMLVideoElement;
     setVideoElement(videoEl);
@@ -31,6 +32,7 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
 
       if (percentPlayed >= 90) {
         setVideoEnded(true);
+        localStorage.setItem('videoFinalizado', 'true');
       }
 
       if(percentPlayed >= 0 && percentPlayed < 30 ){
@@ -61,6 +63,7 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
     <section className={styles.section_one} id='video_section'>
       <div className={styles.section_one_container}>
         <div className={styles.section_one_text}>
+          {!videoStarted && <h2 className={styles.sub_title}> {`Toda la infomación que necesitas acerca de Fuel Factor X la tendrás en exclusiva después de ver el siguiente video ===>>>>>`} </h2>}
           <h2 className={styles.sub_title}>{callToAction}</h2>
         </div>
         <div className={styles.section_one_video}>
@@ -71,9 +74,10 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
             controlsList="nodownload"
             poster="/images/05.webp"
           >
-            <source src="/videos/ffx-spanish.mp4" type="video/mp4" />
+            <source src="https://firebasestorage.googleapis.com/v0/b/c4f-backend-c3e81.appspot.com/o/landing_ffx.mp4?alt=media&token=c4592525-3977-4fb7-8f7c-d5cd4e09e966" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+        {!videoEnded && (<p>Importante, el acceso a la tienda lo tendrás después de ver el video.</p>)}
         </div>
 
       </div>
