@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from '@/styles/section_one.module.scss';
 import Image from 'next/legacy/image';
+import Loader from '@/components/loaders/3points'
 
 interface SectionOneProps {
   videoEnded: boolean;
@@ -63,7 +64,7 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
     <section className={styles.section_one} id='video_section'>
       <div className={styles.section_one_container}>
         <div className={styles.section_one_text}>
-          {!videoStarted && <h2 className={styles.sub_title}> {`Toda la infomación que necesitas acerca de Fuel Factor X la tendrás en exclusiva después de ver el siguiente video ===>>>>>`} </h2>}
+          {!videoStarted && <h2 className={styles.sub_title}> {`Toda la infomación que necesitas acerca de Fuel Factor X la tendrás en exclusiva después de ver el siguiente video `} </h2>}
           <h2 className={styles.sub_title}>{callToAction}</h2>
         </div>
         <div className={styles.section_one_video}>
@@ -74,10 +75,20 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
             controlsList="nodownload"
             poster="/images/05.webp"
           >
-            <source src="https://firebasestorage.googleapis.com/v0/b/c4f-backend-c3e81.appspot.com/o/landing_ffx.mp4?alt=media&token=c4592525-3977-4fb7-8f7c-d5cd4e09e966" type="video/mp4" />
+            <source src="https://firebasestorage.googleapis.com/v0/b/c4f-backend-c3e81.appspot.com/o/landing_ffx_01mp4.mp4?alt=media&token=e39a8c0c-59f5-4aee-971a-7df479bf4303" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        {!videoEnded && (<p>Importante, el acceso a la tienda lo tendrás después de ver el video.</p>)}
+          {!videoEnded && (
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexDirection: 'column'
+            }}>
+              <p style={{padding: '1rem'}}>¡En un momento tendrás el acceso exclusivo a FFX!...   </p>
+              <Loader />
+            </div>
+          )}
         </div>
 
       </div>

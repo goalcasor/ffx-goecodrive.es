@@ -32,7 +32,8 @@
     font-size: var( --title-size-sm);
     transition: all .3s;
     width: 100%;
-    padding: 1rem;
+    padding: 0.3rem;
+    text-align: center;
     & button{
         background-color: transparent;
         border: none;
