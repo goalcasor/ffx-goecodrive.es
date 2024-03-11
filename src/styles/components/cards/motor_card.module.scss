@@ -1,0 +1,32 @@
+@import "../../theme/Default.module.scss";
+@import "../../theme/Utils.module.scss";
+
+.motor_card {
+    border-radius: var(--card-radius);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    @include isMobile{
+      height: 270px;
+      width: 270px;
+    }
+
+    .motor_card_title {
+      font-size: var(--title-size);
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: var(--color-primary);
+      border-radius: var(--card-radius);
+      @extend %text-container-blur;
+      @include isMobile{
+        font-size: var(--title-size-sm);
+      }
+    }
+}

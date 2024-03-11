@@ -8,6 +8,7 @@ import SectionFour from "@/components/home-sections/SectionFour";
 import SectionFive from "@/components/home-sections/SectionFive";
 import SectionSix from "@/components/home-sections/SectionSix";
 import SectionSeven from "@/components/home-sections/SectionSeven";
+import SectionEight from '@/components/home-sections/SectionEight';
 
 export default function Home() {
   const [videoEnded, setVideoEnded] = useState<boolean>(false);
@@ -29,11 +30,17 @@ export default function Home() {
               <SectionSix />
               <SectionThree />
               <SectionTwo />
+              <SectionEight />
               <SectionFour />
               <SectionFive />
+              <SectionSix />
+              <SectionThree />
               <SectionSeven />
             </>
         )}
     </main>
   );
 }
+
+
+// google-site-verification=5HxwkwLkdPzGDm47C7gwbfptyziwAramoHj4kzrShKk
