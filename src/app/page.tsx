@@ -41,6 +41,3 @@ export default function Home() {
     </main>
   );
 }
-
-
-// google-site-verification=5HxwkwLkdPzGDm47C7gwbfptyziwAramoHj4kzrShKk
