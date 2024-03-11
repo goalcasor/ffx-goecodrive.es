@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { GoogleTagManager, GoogleAnalytics  } from '@next/third-parties/google'
+
 import { Inter } from "next/font/google";
 import "@/styles/theme/globals.scss";
 import Header from "@/components/headers/Header";
@@ -21,6 +23,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/images/favicon.png" />
       </head>
+      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
       <Script id='fb-pixel' strategy='afterInteractive'>
         {`
           !function(f,b,e,v,n,t,s)
