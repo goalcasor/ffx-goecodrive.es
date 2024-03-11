@@ -23,6 +23,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/images/favicon.png" />
       </head>
+      <GoogleTagManager gtmId={`${process.env.NEXT_PUBLIC_TAG_MANAGER}`} />
       <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
       <Script id='fb-pixel' strategy='afterInteractive'>
         {`
