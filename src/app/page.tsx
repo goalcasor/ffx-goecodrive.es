@@ -32,7 +32,7 @@ export default function Home({
           videoEnded={videoEnded} 
           setVideoEnded={setVideoEnded} 
         />
-        {!videoEnded && (
+        {videoEnded && (
             <>
               <SectionSix />
               <SectionThree />

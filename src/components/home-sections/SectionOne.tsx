@@ -87,7 +87,6 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
               height: 'fit-content'
             }}>
               <p style={{padding: '1rem'}}>Después de ver el video tendrás el acceso exclusivo a FFX  </p>
-              <Loader /> 
             </div>
           )}
         </div>
