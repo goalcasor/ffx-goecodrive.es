@@ -50,9 +50,11 @@ export default function SectionFive() {
                     </p>
 
                     <Button 
-                    
-                    href='https://d2511r1bjh2ay3.cloudfront.net/product/2hdpsFILcAjxmjkq5vdb0NY4z51GPS8y1y7LCZxe.pdf'>
-                        <h3 className={styles.button_text}>Descargar documentación</h3>
+                        href='https://d2511r1bjh2ay3.cloudfront.net/product/2hdpsFILcAjxmjkq5vdb0NY4z51GPS8y1y7LCZxe.pdf'
+                        primary
+
+                    >
+                        <h3 >Descargar documentación</h3>
                     </Button> 
                 </div>
                 <div className={styles.section_five_image}>

@@ -21,7 +21,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <h2 className={styles.product_title}>{product.title}</h2>
       <p className={styles.product_price}>Price: € {product.price}</p>
       <Button
-        primary={false}
+        primary
         href={product.url}
       >
 

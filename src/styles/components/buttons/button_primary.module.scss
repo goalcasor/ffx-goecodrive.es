@@ -10,6 +10,7 @@
     width: 100%;
     transition: all .2s;
     border: none;
+    display: flex;
     & button{
         background: var(--gradient-primary);
         border: none;
@@ -34,6 +35,9 @@
     width: 100%;
     padding: 0.3rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & button{
         background-color: transparent;
         border: none;
@@ -43,10 +47,6 @@
 
 }
 
-/* .button__primary:hover{
-    background: var(--gradient-primary-hover);
-}
- */
 .button__text{
     font-size: var(--title-size-md);
 }

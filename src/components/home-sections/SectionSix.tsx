@@ -30,6 +30,9 @@ export default function SectionSix() {
                     >
                         <h3>goalcasor@gmail.com</h3>
                     </a>
+                    <div>
+                        <p>*Muestras gratuitas hasta agotar existencias</p>
+                    </div>
                 </div>
             </div>
 
