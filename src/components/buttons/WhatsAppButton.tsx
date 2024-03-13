@@ -11,18 +11,18 @@ interface ButtonProps {
 
 const WhatsAppButton: React.FC<ButtonProps> = ({children, href}) => {
     return (
-        <button 
+        <a 
             className={styles.button}
+            href={href} target="_blank"
         >
-            <a href={href} target="_blank" >
-                {children}
+            
+            {children}
             <SiWhatsapp
             style={{
                 fontSize: '4rem',
                 margin: '1rem'
             }}/>
-            </a>
-        </button>
+        </a>
     );
 };
 
