@@ -9,8 +9,15 @@ import SectionFive from "@/components/home-sections/SectionFive";
 import SectionSix from "@/components/home-sections/SectionSix";
 import SectionSeven from "@/components/home-sections/SectionSeven";
 import SectionEight from '@/components/home-sections/SectionEight';
+import TestimonySection from '@/components/home-sections/TestimonySection';
+import CookieBanner from '@/components/cookies/CookieBanner';
 
-export default function Home() {
+
+export default function Home({
+  searchParams
+}: {
+  searchParams: { [key: string]: string | string[] | undefined }
+}) {
   const [videoEnded, setVideoEnded] = useState<boolean>(false);
   useEffect(() => {
     const videoFinalizado = localStorage.getItem('videoFinalizado');
@@ -25,19 +32,21 @@ export default function Home() {
           videoEnded={videoEnded} 
           setVideoEnded={setVideoEnded} 
         />
-        {videoEnded && (
+        {!videoEnded && (
             <>
               <SectionSix />
               <SectionThree />
               <SectionTwo />
               <SectionEight />
               <SectionFour />
+              <TestimonySection />
               <SectionFive />
               <SectionSix />
               <SectionThree />
               <SectionSeven />
             </>
         )}
+        <CookieBanner searchParams={searchParams}/>
     </main>
   );
 }
