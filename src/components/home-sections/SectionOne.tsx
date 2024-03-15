@@ -36,9 +36,9 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
         localStorage.setItem('videoFinalizado', 'true');
       }
 
-      if(percentPlayed >= 0 && percentPlayed < 30 ){
-        setCallToAction('¡Transforma tu experiencia de conducción hoy mismo con FFX! ¡Aprovecha al máximo cada gota de combustible y potencia tu motor como nunca antes!');
-      }else if (percentPlayed >=30 && percentPlayed < 60) {
+      if(percentPlayed >= 0 && percentPlayed < 25 ){
+        setCallToAction('Es importante que vea este video y comprendas lo que estás a punto de adquidir. Sin rollos, en un momento tendrás acceso a la tienda, también a muestras gratuitas');
+      }else if (percentPlayed >=25 && percentPlayed < 60) {
         setCallToAction('¡Descubre el secreto detrás de un motor más potente y eficiente! Elige FFX y siente la diferencia en cada kilómetro recorrido.');
       } else if (percentPlayed >= 60 && percentPlayed < 90) {
         setCallToAction('¡Optimiza el rendimiento de tu vehículo y contribuye a un futuro más limpio! Con FFX, cada viaje es una oportunidad para cuidar de tu motor y del medio ambiente.');
@@ -64,7 +64,7 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
     <section className={styles.section_one} id='video_section'>
       <div className={styles.section_one_container}>
         <div className={styles.section_one_text}>
-          {!videoStarted && <h2 className={styles.sub_title}> {`Toda la infomación que necesitas acerca de Fuel Factor X la tendrás en exclusiva después de ver el siguiente video `} </h2>}
+          {!videoStarted && <h2 className={styles.sub_title}> {`Es importante que vea este video y comprendas lo que estás a punto de adquidir. En un momento tendrás acceso a la tienda, también a muestras gratuitas.`} </h2>}
           <h2 className={styles.sub_title}>{callToAction}</h2>
         </div>
         <div className={styles.section_one_video}>
@@ -86,7 +86,7 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
               flexDirection: 'column',
               height: 'fit-content'
             }}>
-              <p style={{padding: '1rem'}}>Después de ver el video tendrás el acceso exclusivo a FFX  </p>
+              <p style={{padding: '1rem'}}>En un momento tendrás el acceso exclusivo a la tienda de FFX y también a muestras totalmente gratuitas..!  </p>
             </div>
           )}
         </div>
