@@ -27,14 +27,14 @@ export default function Home({
 }, []);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <HeroSection />
+        <SectionSix />
+        {/* <HeroSection />
         <SectionOne 
           videoEnded={videoEnded} 
           setVideoEnded={setVideoEnded} 
         />
         {videoEnded && (
             <>
-              <SectionSix />
               <SectionThree />
               <SectionTwo />
               <SectionEight />
@@ -45,7 +45,7 @@ export default function Home({
               <SectionThree />
               <SectionSeven />
             </>
-        )}
+        )} */}
         <CookieBanner searchParams={searchParams}/>
     </main>
   );

@@ -3,7 +3,6 @@ import styles from '@/styles/hero_section.module.scss'
 import Button from '../buttons/PrimaryButton';
 
 const HeroSection = () => {
-
     return (
         <section
             className={styles.hero_section}
@@ -22,8 +21,6 @@ const HeroSection = () => {
                     >
                         <h3>Más información</h3>
                     </Button>
-
-                   
                 </div>
            </div>
         </section>

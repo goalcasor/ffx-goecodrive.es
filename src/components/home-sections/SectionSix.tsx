@@ -10,29 +10,33 @@ export default function SectionSix() {
 
             <div className={styles.section_six_container}>
                 <div className={styles.section_six_text}>
-                    <h2 className={styles.sub_title}>Accede a la información sobre cómo aprovechar nuestros precios para mayoristas y descuentos exclusivos</h2>
+                    <h2 className={styles.sub_title}>Accede a toda la información EXCLUSIVA a través de nuestro canal de WhatsApp.
+                        <br/>
+                        <br/>
+                        Ahorra hasta un 30% en tu factura de combustible. Excelente para tu motor, para tu bolsillo y por supuesto, para el planeta
+                    </h2>
                 </div>
                 <div className={styles.buttons_container}>
                     <WhatsAppButton
                         href='https://chat.whatsapp.com/D71KokwLXiT5zrjr6tXned'
                     >
-                        <span>AFILIACIÓN | ACCESO A PRECIOS ÚNICOS</span>    
+                        <span>¡ ACCEDE AHORA MISMO ! </span>    
                     </WhatsAppButton>
 
-                    <WhatsAppButton 
+                   {/*  <WhatsAppButton 
                         href='https://chat.whatsapp.com/DVJQk4g9pY1B2QA9wTTvDt'
                     >
                         <span> MUESTRAS | TESTIMONIO</span>
-                    </WhatsAppButton>
+                    </WhatsAppButton> */}
                     <a 
                         href="mailto:goalcasor@gmail.com"
                         target="_blank" 
                     >
                         <h3>goalcasor@gmail.com</h3>
                     </a>
-                    <div>
+                    {/* <div>
                         <p>*Muestras gratuitas hasta agotar existencias</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

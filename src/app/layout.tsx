@@ -40,7 +40,7 @@ export default function RootLayout({
         `}
       </Script>
       <body className={inter.className}>
-        <Header />
+       {/*  <Header /> */}
         <main>
           {children}
         </main>  
