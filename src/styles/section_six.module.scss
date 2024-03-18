@@ -38,7 +38,7 @@
 
 .description{
     font-size: var(--title-size-md);
-    color: var(--color-surface);
+    color: var(--color-primary);
     @include isMobile{
         font-size: var(--title-size-sm);
     }
@@ -51,5 +51,32 @@
     justify-content: space-around;
     margin: 2rem 0;
     gap: 1.5rem;
+}
+
+.section_six_video{
+    flex: 1;
+    border-radius: .3rem;
+
+    & video::-webkit-media-controls-timeline {
+        display: none;
+      }
+      
+    & video::-webkit-media-controls-panel {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    }
+
+    & .video{
+        height: 350px;
+        width: auto;
+        border-radius: inherit;
+
+        
+
+        @include isMobile{
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
