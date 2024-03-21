@@ -31,7 +31,7 @@ const SectionOne: React.FC<SectionOneProps> = ({ videoEnded, setVideoEnded }) =>
       percentPlayed = (videoElement.currentTime / videoElement.duration) * 100;
       setCurrentTime(videoElement.currentTime);
 
-      if (percentPlayed >= 40) {
+      if (percentPlayed >= 10) {
         setVideoEnded(true);
         localStorage.setItem('videoFinalizado', 'true');
       }
