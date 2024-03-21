@@ -46,7 +46,7 @@
 
 .description{
     color: var(--color-surface);
-    @extend %title-lg;
+    @extend %title-md;
     @include isMobile{
         font-size: var(--title-size-xsm);
     }
