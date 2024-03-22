@@ -2,7 +2,9 @@
   //* -- text & titles
   --text-color: #201009;
   --text-gradient: linear-gradient(0deg, #1b2444, #4c5473);
-  --text-size: 1.15rem;
+
+    
+/*   --text-size: 1.15rem;
   --text-weight: 300;
   --text-weight-bolder: 700;
   --title-size: 2.4rem;
@@ -12,7 +14,22 @@
   --title-size-sm: 1.2rem; 
   --title-size-xsm: 1rem; 
   --title-size-xs: .9rem; 
-  --title-weight: 700;
+  --title-weight: 700; */
+
+    
+
+    --text-size: calc(1.15rem * 0.85); 
+    --text-weight: 300 * 0.85;
+    --text-weight-bolder: 700;
+    --title-size: calc(2.4rem * 0.85);
+    --title-size-xl: calc(4rem * 0.85);
+    --title-size-md: calc(1.8rem * 0.85);
+    --title-size-smd: calc(1.5rem * 0.85);
+    --title-size-sm: calc(1.2rem * 0.85);
+    --title-size-xsm: calc(1rem * 0.85);
+    --title-size-xs: calc(0.9rem * 0.85);
+    --title-weight: 600;
+
 
   //* -- colors
   --color-surface: #f6f2f2;

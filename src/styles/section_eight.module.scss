@@ -20,6 +20,14 @@
     }
 }
 
+.section_eight_subtile{
+    width: 80vw;
+
+    @include isMobile{
+        width: 100vw;
+    }
+}
+
 .sub_title{
     @extend %text-gradient-primary;
     @extend %title-xl;

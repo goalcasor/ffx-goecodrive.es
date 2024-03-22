@@ -4,7 +4,7 @@
 .hero_section{
     background-size: cover;
     background-position: center;
-    background-image: url('/images/01.webp');
+    background-image: url('/images/09.jpg');
     width: 100vw;
     height: 100vh;
 }
@@ -23,7 +23,7 @@
     justify-content: space-around;
     align-items: center;
     width: 50vw;
-    height: 70%;
+    height: fit-content;
     @extend %text-container-blur;
     padding: 1rem;
     border-radius: 10px;
@@ -31,7 +31,6 @@
     text-align: center;
     @include isMobile{
         width: 100%;
-        height: fit-content;
         text-align: left;
 
     }
