@@ -46,11 +46,6 @@ const questions: FAQ[] = [
     answer: `Hay muchos factores que contribuyen a la economía de combustible del automóvil. Algunas personas pueden necesitar usar FFX durante un período de tiempo más largo según el tipo de motor, la antigüedad del vehículo y el mantenimiento. Los aumentos en la economía de combustible son solo uno de los beneficios de FFX. FFX es un producto con base científica que funciona siempre.`,
   },
   {
-    id: "q7",
-    question: `¿Qué impacto tendrá el uso de FFX en los costos de mantenimiento y la expectativa de vida del motor?`,
-    answer: `FFX fue formulado para reducir los sólidos, el agua, el óxido y la corrosión. Con sus detergentes y agentes lubricantes, ayudará a limpiar y proteger los tanques de combustible, las líneas de combustible, las bombas, los filtros y los inyectores. FFX también beneficia a las válvulas, pistones, anillos y cilindros del motor, ya que elimina la acumulación de carbono y aumenta significativamente la vida útil del motor.`,
-  },
-  {
     id: "q8",
     question: `¿Cómo puedo estar seguro de que el uso de FFX no hará que mi motor funcione mal?`,
     answer: `FFX se probó específicamente para garantizar el cumplimiento completo de los criterios de desempeño de las asociaciones de estándares aplicables. Esto incluye la Sociedad Americana de Tecnología y Materiales (ASTM).`,

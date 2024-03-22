@@ -41,10 +41,10 @@ export default function SectionSix() {
                         <span> ¡ ACCEDE A TRAVÉS DE TELEGRAM ! </span>
                     </TelegramButton>
                     <a 
-                        href="mailto:goalcasor@gmail.com"
+                        href="mailto:info@goecodrive.es"
                         target="_blank" 
                     >
-                        <h3>goalcasor@gmail.com</h3>
+                        <h3>info@goecodrive.es</h3>
                     </a>
                 </div>
             </div>
